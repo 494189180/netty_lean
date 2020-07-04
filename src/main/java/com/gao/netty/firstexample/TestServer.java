@@ -22,7 +22,6 @@ public class TestServer {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
-
     }
 
 }
