@@ -1,0 +1,27 @@
+ws://server:port/context_path
+ws://localhost:9999/ws
+
+rmi：remote method invocation 远程方法调用，跨机器的调用方式，只针对java
+client 序列化成字节码的形式传递给server端，server以反序列化成自己需要的对象，
+处理后序列化再以字节码的形式传递给client端，client端在反序列化成自己需要的形式。
+序列化与反序列化：也叫做 编码encode与解码decode
+
+rpc：remote procedure call 远程过程调用，很多rpc框架是跨语言的.
+1.定义一个接口说明文件:描述了一个接口结构体，对象成员，接口方法等一系列信息
+2.通过rpc框架所提供的编译器，将接口说明文件编译成具体的语言文件
+3.在客户端和服务器端分别引入rpc编译器所生成的文件，即可像调用本地方法一样调用远程方法。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
