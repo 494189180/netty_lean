@@ -23,6 +23,13 @@ public class NioTest13 {
         FileChannel outputFileChannel = outputRandomAccessFile.getChannel();
 
         MappedByteBuffer inputData = inputFileChannel.map(FileChannel.MapMode.READ_ONLY, 0, inputLength);
+
+        System.out.println("=================");
+        Charset.availableCharsets().forEach((k,v)->{
+            System.out.println(k+","+v);
+        });
+        System.out.println("=================");
+
         //Charset charset = Charset.forName("utf-8");
         Charset charset = Charset.forName("iso-8859-1");
         CharsetDecoder decoder = charset.newDecoder();
